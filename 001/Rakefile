@@ -1,0 +1,26 @@
+task :default  => [:menu]
+
+def bex(cmd)
+  sh "bundle check || bundle install"
+  sh "bundle exec #{cmd}"
+end
+
+task :menu do
+  sh "rake -T"
+end
+
+desc "run the program"
+task :run do
+  bex "bin/run spec/data/complex_input.txt"
+end
+
+desc "run rspec test suite"
+task :spec do
+  bex "rspec 2>&1 | less -R --quit-at-eof"
+end
+
+desc "show code complexity"
+task :flog do
+  puts "---------------------------------------------------------"
+  bex "find lib -name '*.rb' | xargs flog"
+end

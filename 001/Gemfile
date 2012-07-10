@@ -1,0 +1,5 @@
+source 'https://rubygems.org'
+
+%w[rake rspec guard-rspec libnotify flog].each do |gemfile|
+  gem gemfile
+end

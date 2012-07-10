@@ -1,0 +1,16 @@
+#!/usr/bin/env ruby
+
+$MYDIR = File.dirname(__FILE__)
+
+$LOAD_PATH <<  $MYDIR + "/../lib"
+
+require 'connection_db_builder'
+require 'connection_db_formatter'
+require 'user_db_builder'
+
+input_file = ARGV.shift or raise "Usage: run <filename>"
+
+userdb = UserDbBuilder.new.build(File.read(input_file))
+connectiondb = ConnectionDbBuilder.new.build(userdb)
+
+puts ConnectionDbFormatter.new.text(connectiondb)

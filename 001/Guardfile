@@ -1,0 +1,6 @@
+guard :rspec, :cli => "--color -r spec_helper" do
+  watch( %r{spec/.*_spec\.rb$} )
+  watch( %r{^lib/.*\.rb$}      ) { "spec" }
+end
+
+# vim: ft=ruby
