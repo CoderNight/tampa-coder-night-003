@@ -1,0 +1,87 @@
+digraph RGL__DirectedAdjacencyGraph {
+    elmo [
+        fontsize = 8,
+        label = elmo
+    ]
+
+    hilton [
+        fontsize = 8,
+        label = hilton
+    ]
+
+    darrel_skiles [
+        fontsize = 8,
+        label = darrel_skiles
+    ]
+
+    cruz_rice [
+        fontsize = 8,
+        label = cruz_rice
+    ]
+
+    leon_greenfelder [
+        fontsize = 8,
+        label = leon_greenfelder
+    ]
+
+    emiliano_gaylord [
+        fontsize = 8,
+        label = emiliano_gaylord
+    ]
+
+    florence_vonrueden [
+        fontsize = 8,
+        label = florence_vonrueden
+    ]
+
+    kaia_jerde [
+        fontsize = 8,
+        label = kaia_jerde
+    ]
+
+    magali [
+        fontsize = 8,
+        label = magali
+    ]
+
+    brook_metz [
+        fontsize = 8,
+        label = brook_metz
+    ]
+
+    elmo -> hilton [
+        fontsize = 8
+    ]
+
+    elmo -> magali [
+        fontsize = 8
+    ]
+
+    hilton -> emiliano_gaylord [
+        fontsize = 8
+    ]
+
+    hilton -> kaia_jerde [
+        fontsize = 8
+    ]
+
+    hilton -> brook_metz [
+        fontsize = 8
+    ]
+
+    darrel_skiles -> cruz_rice [
+        fontsize = 8
+    ]
+
+    darrel_skiles -> leon_greenfelder [
+        fontsize = 8
+    ]
+
+    darrel_skiles -> hilton [
+        fontsize = 8
+    ]
+
+    florence_vonrueden -> hilton [
+        fontsize = 8
+    ]
+}
